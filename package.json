@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "next -p 3003",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "graphql-fetch": "^1.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.1.4",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "save": "^2.4.0"
+  }
+}
