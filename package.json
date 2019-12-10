@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "next -p 3003",
     "build": "next build",
-    "start": "next start -p 8200"
+    "start": "next start -p 8200",
+    "format": "prettier --trailing-comma es5 --single-quote --write './**/*.js'"
   },
   "dependencies": {
     "graphql-fetch": "^1.0.1",
