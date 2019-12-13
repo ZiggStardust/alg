@@ -2,7 +2,7 @@ import fetch from 'isomorphic-unfetch'
 
 export default async (query = '', variables = {}) => {
 
-	const res = await fetch('http://localhost:3001/admin/api/', {
+	const res = await fetch('http://localhost:8201/admin/api/', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',

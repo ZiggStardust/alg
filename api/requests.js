@@ -24,7 +24,12 @@ export default {
 				id,
 				routePath,
 				pageTitle,
-				description
+				description,
+				image {
+					_meta {
+						url,	
+					}
+				}
 			}
 		}
 	`, {
