@@ -8,10 +8,10 @@ import Nav from '../components/home/nav';
 class Home extends Component {
 
 	static async getInitialProps() {
-		const data = await requests.getPageByRoutePath("/");
-		console.log(data);
-		//return {content: {}};
-		return data && data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
+		//const data = await requests.getPageByRoutePath("/");
+		//console.log(data);
+		return {content: {}};
+		//return data && data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
 	}
 
 	componentDidMount() {
