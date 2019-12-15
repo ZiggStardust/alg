@@ -11,7 +11,7 @@ class Home extends Component {
 		const data = await requests.getPageByRoutePath("/");
 		console.log(data);
 		//return {content: {}};
-		return data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
+		return data && data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
 	}
 
 	componentDidMount() {
