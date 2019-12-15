@@ -15,7 +15,7 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		//$.fn.clientSide();
+		$.fn.clientSide();
 	}
 
 	render() {
@@ -36,7 +36,7 @@ class Home extends Component {
 						<div className="content-wrap pt-3 pb-0">
 
 							<div className="ohidden parallax d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -700px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435130/abbey-leisure/main-image.jpg")', height: 'calc(100vh - 114px)'}}>
+									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -700px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435130/abbey-leisure/main-image.jpg")', height: '520px', minHeight: '400px'}}>
 								<div className="container">
 									<div className="row">
 										<div className="col-lg-6">
