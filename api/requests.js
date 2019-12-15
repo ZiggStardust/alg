@@ -26,9 +26,8 @@ export default {
 				pageTitle,
 				description,
 				image {
-					_meta {
-						url,	
-					}
+					id,
+					publicUrl,
 				}
 			}
 		}

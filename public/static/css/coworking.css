@@ -441,6 +441,15 @@ ul.list-numbers li {
     background: rgba(10, 10, 10, 0.30);
 }
 
+
+.home-events .card-body {
+    padding: 1rem;
+}
+.home-events .card-title {
+    font-size: 16px;
+    color: #333333;
+}
+
 /* Responsive Device less than 768px (.device-sm <)
 -----------------------------------------------------------------*/
 @media (max-width: 767.98px) {
