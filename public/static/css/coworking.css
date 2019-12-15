@@ -500,3 +500,7 @@ ul.list-numbers li {
     }
 
 }
+
+#content {
+    width: 100%;
+}

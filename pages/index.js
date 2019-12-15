@@ -33,7 +33,7 @@ class Home extends Component {
 				<div id="wrapper" className="clearfix">
 					<Nav />
 					<section id="content">
-						<div className="content-wrap pt-3 pb-0">
+						<div className="content-wrap pt-0 pb-0">
 
 							<div className="ohidden parallax d-flex align-items-center home-hero"
 									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -700px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435130/abbey-leisure/main-image.jpg")', height: '520px', minHeight: '400px'}}>
@@ -150,6 +150,12 @@ class Home extends Component {
 									</div>
 								</div>
 
+								<div className="card shadow-sm border-light mt-4">
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576440876/abbey-leisure/flower-show.jpg" alt="Featured image 2" className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">Chelsea Flower Show</h5>
+									</div>
+								</div>
 							</div>
 
 							<div className="col-md-3 col-sm-6">
@@ -159,25 +165,18 @@ class Home extends Component {
 										<h5 className="card-title mb-0 t600">Formula 1</h5>
 									</div>
 								</div>
+
+								<div className="card shadow-sm border-light mt-4">
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435017/abbey-leisure/concerts.jpg" alt="Featured image 2" className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">Concerts</h5>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-				<div>
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				</div>
-
 				<div id="gotoTop" className="icon-angle-up">top</div>
 
 				<Footer />
