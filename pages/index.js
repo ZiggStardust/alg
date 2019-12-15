@@ -15,7 +15,7 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		$.fn.clientSide();
+		//$.fn.clientSide();
 	}
 
 	render() {
