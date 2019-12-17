@@ -34,7 +34,6 @@ class Home extends Component {
 					<Nav />
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
-
 							<div className="ohidden parallax d-flex align-items-center home-hero"
 									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -700px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435130/abbey-leisure/main-image.jpg")', height: '520px', minHeight: '400px'}}>
 								<div className="container">
@@ -45,7 +44,6 @@ class Home extends Component {
 									</div>
 								</div>
 							</div>
-
 							<div className="bg-theme-light">
 								<div className="shadow-sm hero-features bgcolor dark shadow">
 									<div className="row">
@@ -58,7 +56,6 @@ class Home extends Component {
 												<p className="text-white mb-0">Abbey owns a portfolio of tickets at all the main sporting stadiums and concert venues; always in the prime locations.</p>
 											</div>
 										</div>
-
 										<div className="col-md-4 mt-3 mt-md-0">
 											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
 												<div className="fbox-icon">
@@ -68,7 +65,6 @@ class Home extends Component {
 												<p className="text-white mb-0">When the occasion demands ‘more than just the ticket‘, Abbey will provide the very best official hospitality.</p>
 											</div>
 										</div>
-
 										<div className="col-md-4 mt-3 mt-md-0">
 											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
 												<div className="fbox-icon">
@@ -113,9 +109,8 @@ class Home extends Component {
 				{/*	</div>*/}
 				{/*</div>*/}
 
-				<div className="section mt-0 pt-md-0 pt-0 bg-theme-whit home-events">
+				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events">
 					<div className="container clearfix">
-
 						<div className="heading-block mb-4 nobottomborder">
 							<div className="before-heading">Get Involved</div>
 							<h3 className="nott t500">Our Events</h3>
@@ -185,15 +180,81 @@ class Home extends Component {
 										<h5 className="card-title mb-0 t600">Chelsea Flower Show</h5>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-				<div id="gotoTop" className="icon-angle-up">top</div>
 
-				<Footer />
+					<div className="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
+						<div className="container">
+							<div className="heading-block nobottomborder center">
+								<div className="before-heading">What our Customers Say</div>
+								<h2 className="nott t600">Testimonials</h2>
+								{/*<p className="mb-0 mt-1">*/}
+								{/*	<span className="t600">Excellent, 9.6</span> out of 10 based on <span*/}
+								{/*	className="t600">2,118</span> reviews.*/}
+								{/*</p>*/}
+							</div>
+							<div id="testimonials-carousel"
+									 className="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix"
+									 data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false"
+									 data-pagi="true" data-items="1">
+								<div className="slide">
+									<div className="testi-content">
+										<div className="testi-stars mb-4">
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+										</div>
+										<p>Thank you Abbey for another wonderful day at Wimbledon . Our debenture seats were in a prime location on Centre Court and the hospitality was superb.</p>
+										<div className="testi-meta mt-4">
+											By x.
+										</div>
+									</div>
+								</div>
+								<div className="slide">
+									<div className="testi-content">
+										<div className="testi-stars mb-4">
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+											<i className="icon-star3"></i>
+										</div>
+										<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
+										<div className="testi-meta mt-4">
+											By x.
+										</div>
+									</div>
+								</div>
+								{/*<div className="slide">*/}
+								{/*	<div className="testi-content">*/}
+								{/*		<div className="testi-stars mb-4">*/}
+								{/*			<i className="icon-star3"></i>*/}
+								{/*			<i className="icon-star3"></i>*/}
+								{/*			<i className="icon-star3"></i>*/}
+								{/*			<i className="icon-star3"></i>*/}
+								{/*			<i className="icon-star3"></i>*/}
+								{/*		</div>*/}
+								{/*		<p>Compellingly engage multimedia based niche markets via value-added manufactured products.*/}
+								{/*			Competently formulate goal-oriented content for installed base users. Uniquely leverage other's*/}
+								{/*			granular ROI without 24/365 collaboration and idea-sharing.</p>*/}
+								{/*		<div className="testi-meta mt-4">*/}
+								{/*			By x.*/}
+								{/*		</div>*/}
+								{/*	</div>*/}
+								{/*</div>*/}
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			<div id="gotoTop" className="icon-angle-up">top</div>
+
+			<Footer />
 			</div>
 		)
 	}

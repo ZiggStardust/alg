@@ -24,6 +24,7 @@ export default class CustomDocument extends Document {
 				<link rel="stylesheet" href="static/css/responsive.css" type="text/css" />
 				<link rel="stylesheet" href="static/css/coworking.css" type="text/css" />
 				<link rel="stylesheet" href="static/css/colors.css" type="text/css" />
+				<link rel="stylesheet" href="static/css/custom.css" type="text/css" />
 
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
