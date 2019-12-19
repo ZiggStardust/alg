@@ -8,7 +8,9 @@ export default content => {
 
 					<div className="container clearfix">
 
-						<div id="primary-menu-trigger"><i className="icon-reorder"></i></div>
+						<div id="primary-menu-trigger">
+							<i className="icon-reorder"></i>
+						</div>
 
 
 						<div id="logo">
@@ -41,7 +43,9 @@ export default content => {
 							</ul>
 
 							<div id="top-account">
-								<a href="tel:+618-234-532-45"><span>SIGN UP</span></a>
+								<a href="#signup" className="d-none d-lg-block">
+									<span>SIGN UP</span>
+								</a>
 							</div>
 
 

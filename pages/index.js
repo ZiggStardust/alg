@@ -47,7 +47,7 @@ class Home extends Component {
 
 								<i className="icon-angle-down header-down" id="scroll-down"></i>
 							</div>
-							<div className="bg-theme-light pt-5">
+							<div className="bg-theme-light pt-5 pb-5">
 								<div className="shadow-sm hero-features bgcolor dark shadow">
 									<div className="row">
 										<div className="col-md-4 mt-3 mt-md-0">
@@ -124,7 +124,7 @@ class Home extends Component {
 
 						<div className="row">
 							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light">
+								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576424943/abbey-leisure/5df655ee4ca6fa3c3c0bb7a6.jpg" alt="Featured image 1" className="card-img-top" />
 										<div className="card-body">
 											<h5 className="card-title mb-0 t600">Horse Racing</h5>
@@ -140,7 +140,7 @@ class Home extends Component {
 							</div>
 
 							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light">
+								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576432888/abbey-leisure/tennis.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">Tennis</h5>
@@ -156,7 +156,7 @@ class Home extends Component {
 							</div>
 
 							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light">
+								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576433357/abbey-leisure/cricket.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">Cricket</h5>
@@ -173,7 +173,7 @@ class Home extends Component {
 							</div>
 
 							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light">
+								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576433383/abbey-leisure/f1.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">Formula 1</h5>
