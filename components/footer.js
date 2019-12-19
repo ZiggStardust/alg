@@ -31,11 +31,14 @@ export default () => {
 
 							</div>
 
-							<div className="col-5">
+							<div className="col-6">
 								<p className="mb-1 mt-5">23-24 Greek Street, London, W1D 4DZ</p>
 								<p className="text-white-50">Copyrights © 2019 All Rights Reserved by Abbey Lesuire Group.</p>
-								<div className="copyright-links text-white-50">
-									<a href="#" className="text-white-50">Terms of Use</a> / <a href="#" className="text-white-50">Privacy Policy</a></div>
+								<div className="copyright-links">
+									<a href="mailto:info@abbey-leisure.co.uk" className="text-white">info@abbey-leisure.co.uk</a> / <a href="#" className="text-white">07123456789</a></div>
+							</div>
+							<div className="col-4 align-content-end align-items-center text-white">
+								<iframe src="https://snazzymaps.com/embed/207107" width="100%" height="200px" className="pull-right"></iframe>
 							</div>
 						</div>
 					</div>

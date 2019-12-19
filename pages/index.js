@@ -35,7 +35,8 @@ class Home extends Component {
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
 							<div className="ohidden parallax d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -700px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435130/abbey-leisure/main-image.jpg")', height: '520px', minHeight: '400px'}}>
+									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -1000px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px'}}>
+
 								<div className="container">
 									<div className="row">
 										<div className="col-lg-6">
@@ -43,8 +44,10 @@ class Home extends Component {
 										</div>
 									</div>
 								</div>
+
+								<i className="icon-angle-down header-down" id="scroll-down"></i>
 							</div>
-							<div className="bg-theme-light">
+							<div className="bg-theme-light pt-5">
 								<div className="shadow-sm hero-features bgcolor dark shadow">
 									<div className="row">
 										<div className="col-md-4 mt-3 mt-md-0">
@@ -97,17 +100,20 @@ class Home extends Component {
 					</div>
 				</div>
 
-				{/*<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit home-events">*/}
-				{/*	<div className="container clearfix">*/}
-				{/*		<form className="form-inline">*/}
-				{/*			<div className="form-group mx-sm-3 mb-2">*/}
-				{/*				<label htmlFor="inputPassword2" className="sr-only">E-Mail</label>*/}
-				{/*				<input type="password" className="form-control" id="inputPassword2" placeholder="Password" />*/}
-				{/*			</div>*/}
-				{/*			<button type="submit" className="btn btn-primary mb-2">Subscribe</button>*/}
-				{/*		</form>*/}
-				{/*	</div>*/}
-				{/*</div>*/}
+				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit home-events">
+					<div className="container clearfix">
+
+						<h3>Subscribe to our mailing list</h3>
+
+						<form className="form-inline">
+							<div className="form-group col-md-4 mb-2">
+								<label htmlFor="inputPassword2" className="sr-only">E-Mail</label>
+								<input type="password" className="form-control fit-width" id="inputPassword2" placeholder="Email address" />
+							</div>
+							<button type="submit" className="btn btn-primary mb-2">Subscribe</button>
+						</form>
+					</div>
+				</div>
 
 				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events">
 					<div className="container clearfix">
@@ -252,7 +258,7 @@ class Home extends Component {
 
 
 				</div>
-			<div id="gotoTop" className="icon-angle-up">top</div>
+				<div id="gotoTop" className=""><i className="icon-angle-up"></i></div>
 
 			<Footer />
 			</div>

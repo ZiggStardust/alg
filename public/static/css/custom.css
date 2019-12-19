@@ -5,6 +5,11 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+#logo img {
+    margin: 12px 0;
+    height: 66px;
+}
+
 .testimonial-full .testi-content {
     max-width: 800px;
     width: 100%;
@@ -25,5 +30,37 @@
 }
 
 .owl-carousel .owl-dots .owl-dot {
+    cursor: pointer;
+}
+
+.hero-features {
+    transform: none;
+}
+
+.home-events .card-title {
+    /*color: #0061aa;*/
+    text-align: center;
+}
+
+.home-events input {
+    width: 100% !important;
+}
+
+.home-events form {
+    justify-content: center;
+    align-content: center;
+}
+
+.home-events h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.header-down {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #fff;
+    font-size: 38px;
     cursor: pointer;
 }

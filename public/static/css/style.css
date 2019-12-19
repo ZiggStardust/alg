@@ -12668,9 +12668,9 @@ body:not(.device-touch) .tagcloud a {
 
 /* Pagination primary */
 .pagination.pagination-primary .page-item .page-link {
-	background-color: #007bff;
+	background-color: #0061aa;
 	background-color: var(--primary);
-	border-color: #007bff;
+	border-color: #0061aa;
 	border-color: var(--primary);
 	color: #FFF;
 }

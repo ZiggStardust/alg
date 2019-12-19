@@ -11,12 +11,12 @@ export default content => {
 						<div id="primary-menu-trigger"><i className="icon-reorder"></i></div>
 
 
-						{/*<div id="logo">*/}
-						{/*	<a href="index.html" className="standard-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576441681/abbey-leisure/logo.png?v=234">*/}
-						{/*		<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576441681/abbey-leisure/logo.png?v=234" alt="Canvas Logo" /></a>*/}
-						{/*	<a href="index.html" className="retina-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576441681/abbey-leisure/logo.png?v=234">*/}
-						{/*		<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576441681/abbey-leisure/logo.png?v=234" alt="Canvas Logo" /></a>*/}
-						{/*</div>*/}
+						<div id="logo">
+							<a href="index.html" className="standard-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png">
+								<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png" alt="Canvas Logo" /></a>
+							<a href="index.html" className="retina-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png">
+								<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png" alt="Canvas Logo" /></a>
+						</div>
 
 						<nav id="primary-menu">
 
