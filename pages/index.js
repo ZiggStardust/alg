@@ -100,7 +100,7 @@ class Home extends Component {
 					</div>
 				</div>
 
-				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit home-events">
+				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe">
 					<div className="container clearfix">
 
 						<h3>Subscribe to our mailing list</h3>

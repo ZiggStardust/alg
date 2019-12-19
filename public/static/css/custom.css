@@ -42,16 +42,16 @@
     text-align: center;
 }
 
-.home-events input {
+.subscribe input {
     width: 100% !important;
 }
 
-.home-events form {
+.subscribe form {
     justify-content: center;
     align-content: center;
 }
 
-.home-events h3 {
+.subscribe h3 {
     width: 100%;
     text-align: center;
 }
