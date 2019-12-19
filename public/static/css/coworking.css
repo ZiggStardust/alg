@@ -4,7 +4,7 @@
 -----------------------------------------------------------------*/
 
 :root {
-    --themecolor: #267DF4;
+    --themecolor: #0061aa;
     --themecolorrgba: 38, 125, 244;
 }
 
@@ -32,7 +32,7 @@
 #top-account { right: 10px; }
 
 #top-account a {
-    background-color: #267DF4;
+    background-color: #0061aa;
     background-color: var(--themecolor);;
     color:#FFF ;
     padding: 10px 14px;
@@ -89,7 +89,7 @@
     font-style: normal;
     background-color: rgba(38, 125, 244, 0.1);
     background-color: rgba(var(--themecolorrgba), .1);
-    color: #267DF4;
+    color: #0061aa;
     color: var(--themecolor);
     padding: 3px 8px;
     border-radius: 2px;
@@ -121,7 +121,7 @@
 .price-list .price-title {
     font-size: 48px;
     font-weight: 600;
-    color: #267DF4;
+    color: #0061aa;
     color: var(--themecolor);
 }
 
@@ -259,7 +259,7 @@
 
 .mfp-iframe-holder .mfp-close,
 .testi-stars i {
-    background-color: #267DF4;
+    background-color: #0061aa;
     background-color: var(--themecolor);
     font-size: 14px;
     color: #FFF;
@@ -289,9 +289,9 @@
 .feature-box.fbox-plain.fbox-small p { margin-left: 0; }
 
 .button.button-border {
-    border-color: #267DF4;
+    border-color: #0061aa;
     border-color: var(--themecolor);
-    color: #267DF4;
+    color: #0061aa;
     color: var(--themecolor);
 }
 
@@ -305,7 +305,7 @@
     line-height: 81px;
     border-radius: 50%;
     z-index: 1;
-    background-color: #267DF4;
+    background-color: #0061aa;
     background-color: var(--themecolor);
     text-align: center;
     font-size: 24px;
@@ -347,7 +347,7 @@
 #locations-carousel.owl-carousel .owl-nav [class*=owl-] {
     opacity: 1;
     background-color: #FFF;
-    color: #267DF4;
+    color: #0061aa;
     color: var(--themecolor);
 }
 
