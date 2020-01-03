@@ -3,6 +3,7 @@ import requests from '../api/requests';
 import Head from '../components/head';
 import Footer from '../components/footer';
 import Nav from '../components/home/nav';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
 class Home extends Component {
@@ -28,14 +29,44 @@ class Home extends Component {
 			)
 		}
 
+		const CustomForm = ({ status, message, onValidated }) => {
+			let email;
+			const submit = () =>
+				email &&
+				email.value.indexOf("@") > -1 &&
+				onValidated({
+					EMAIL: email.value
+				});
+
+			return (
+				<>
+					<div className="form-container">
+						<div className="form-group col-md-4 mb-2">
+							<input ref={node => (email = node)} type="email" placeholder="Email Address" className="form-control fit-width" />
+						</div>
+						<button className="btn btn-primary mb-2" onClick={submit}>Submit</button>
+					</div>
+					<div className="form-container-error">
+						{status === "sending" && <div style={{ color: "blue" }} className="col-12">sending...</div>}
+						{status === "error" && (
+							<div style={{ color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />
+						)}
+						{status === "success" && (
+							<div style={{ color: "green" }} dangerouslySetInnerHTML={{ __html: message }} />
+						)}
+					</div>
+				</>
+			);
+		}
+
 		return (
 			<div>
 				<div id="wrapper" className="clearfix">
 					<Nav />
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
-							<div className="ohidden parallax d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -1000px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px'}}>
+							<div className="ohidden d-flex align-items-center home-hero"
+									 data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -1000px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px'}}>
 
 								<div className="container">
 									<div className="row">
@@ -44,7 +75,6 @@ class Home extends Component {
 										</div>
 									</div>
 								</div>
-
 								<i className="icon-angle-down header-down" id="scroll-down"></i>
 							</div>
 							<div className="bg-theme-light pt-5 pb-5">
@@ -83,7 +113,7 @@ class Home extends Component {
 						</div>
 					</section>
 
-					<div className="section mt-0 pt-md-5 pt-0 mb-0">
+					<div className="section mt-0 pt-md-5 pt-0 mb-0" id="about">
 						<div className="container clearfix">
 							<div className="row align-items-md-center mb-4">
 								<div className="col-md-6 pr-5">
@@ -100,22 +130,28 @@ class Home extends Component {
 					</div>
 				</div>
 
-				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe">
+				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe" id="signup">
 					<div className="container clearfix">
-
 						<h3>Subscribe to our mailing list</h3>
 
-						<form className="form-inline">
-							<div className="form-group col-md-4 mb-2">
-								<label htmlFor="inputPassword2" className="sr-only">E-Mail</label>
-								<input type="password" className="form-control fit-width" id="inputPassword2" placeholder="Email address" />
-							</div>
-							<button type="submit" className="btn btn-primary mb-2">Subscribe</button>
-						</form>
+						<div id="mc_embed_signup">
+							<form className="form-inline" action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+								<MailchimpSubscribe
+									url='https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20'
+									render={({ subscribe, status, message }) => (
+										<CustomForm
+											status={status}
+											message={message}
+											onValidated={formData => subscribe(formData)}
+										/>
+									)}
+								/>
+							</form>
+						</div>
 					</div>
 				</div>
 
-				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events">
+				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
 					<div className="container clearfix">
 						<div className="heading-block mb-4 nobottomborder">
 							<div className="before-heading">Get Involved</div>

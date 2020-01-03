@@ -21,37 +21,29 @@ export default content => {
 						</div>
 
 						<nav id="primary-menu">
-
 							<ul>
-								<li className="current">
-									<a href="#">
-									<div>Home</div>
-								</a>
+								<li>
+									<a href="#" data-scroll="about">
+										<div>About Us</div>
+									</a>
 								</li>
 								<li>
-									<a href="#">
-									<div>About Us</div>
-								</a>
+									<a href="#" data-scroll="events">
+										<div>Our Events</div>
+									</a>
 								</li>
 								<li>
-									<a href="#">
-									<div>Our Events</div>
-								</a></li>
-								<li><a href="#">
-									<div>Contact Us</div>
-								</a></li>
+									<a href="#" data-scroll="contact">
+										<div>Contact Us</div>
+									</a>
+								</li>
 							</ul>
-
 							<div id="top-account">
-								<a href="#signup" className="d-none d-lg-block">
+								<a href="#" className="d-none d-lg-block" data-scroll="signup">
 									<span>SIGN UP</span>
 								</a>
 							</div>
-
-
 						</nav>
-
-
 					</div>
 
 				</div>
