@@ -5,15 +5,17 @@
 var $mcj = jQuery.noConflict(true);
 
 jQuery('[data-scroll]').click(function(){
-	console.log('yooo');
 	element = jQuery('#'+jQuery(this).attr('data-scroll'));
-	console.log(element);
-	console.log(element.offset().top);
-
-
-
 	jQuery('html').animate(
 		{scrollTop: element.offset().top - 120}, //- $(window).scrollTop()
+		1000
+	);
+});
+
+jQuery('[data-scroll-down]').click(function(){
+	element = jQuery('[data-scroll-content]');
+	jQuery('html').animate(
+		{scrollTop: element.offset().top - 98}, //- $(window).scrollTop()
 		1000
 	);
 });

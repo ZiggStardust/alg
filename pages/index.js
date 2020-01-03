@@ -75,9 +75,9 @@ class Home extends Component {
 										</div>
 									</div>
 								</div>
-								<i className="icon-angle-down header-down" id="scroll-down"></i>
+								<i className="icon-angle-down header-down" id="scroll-down" data-scroll-down></i>
 							</div>
-							<div className="bg-theme-light pt-5 pb-5">
+							<div className="bg-theme-light pt-5 pb-5" data-scroll-content>
 								<div className="shadow-sm hero-features bgcolor dark shadow">
 									<div className="row">
 										<div className="col-md-4 mt-3 mt-md-0">
