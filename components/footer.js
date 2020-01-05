@@ -11,15 +11,15 @@ export default () => {
 							<div className="col-xs-12 col-sm-2">
 								<img src="static/img/logo-white.png" alt="Logo Footer" className="mb-4 footer-logo" />
 								<div className="footer-socials">
-									<a href="#" className="social-icon si-small si-light si-facebook" title="Facebook">
+									<a href="https://www.facebook.com/AbbeyBoxOffice" className="social-icon si-small si-light si-facebook" title="Facebook" target="_blank">
 										<i className="icon-facebook"></i>
 										<i className="icon-facebook"></i>
 									</a>
-									<a href="#" className="social-icon si-small si-light si-twitter" title="Twitter">
+									<a href="https://twitter.com/abbeyleisuregrp" className="social-icon si-small si-light si-twitter" title="Twitter" target="_blank">
 										<i className="icon-twitter"></i>
 										<i className="icon-twitter"></i>
 									</a>
-									<a href="#" className="social-icon si-small si-light si-instagram" title="instagram">
+									<a href="https://www.instagram.com/abbeyleisuregroup" className="social-icon si-small si-light si-instagram" title="instagram" target="_blank">
 										<i className="icon-instagram"></i>
 										<i className="icon-instagram"></i>
 									</a>
@@ -30,7 +30,7 @@ export default () => {
 								<p className="mb-1 mt-5">23-24 Greek Street, London, W1D 4DZ</p>
 								<p className="text-white-50">Copyrights © 2019 All Rights Reserved by Abbey Lesuire Group.</p>
 								<div className="copyright-links">
-									<a href="mailto:info@abbey-leisure.co.uk" className="text-white">info@abbey-leisure.co.uk</a> / <a href="#" className="text-white">07123456789</a></div>
+									<a href="mailto:info@abbey-leisure.co.uk" className="text-white">office@abbey-leisure.co.uk</a> / <a href="tel:+442077989200" className="text-white">020 7798 9200</a></div>
 							</div>
 							<div className="col-xs-12 col-sm-4 align-content-end align-items-center text-white">
 								<iframe src="https://snazzymaps.com/embed/207107" width="100%" height="200px" className="pull-right"></iframe>
