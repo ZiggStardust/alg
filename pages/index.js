@@ -71,7 +71,7 @@ class Home extends Component {
 								<div className="container">
 									<div className="row">
 										<div className="col-lg-6">
-											<h1 className="text-white">The Best in client entertainment, with the hottest tickets and hospitality packages around.</h1>
+											<h1 className="text-white">The best in client entertainment, with the hottest tickets and hospitality packages around.</h1>
 										</div>
 									</div>
 								</div>
