@@ -67,7 +67,7 @@ class Home extends Component {
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
 							<div className="ohidden d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px', backgroundPosition: '0 -160px'}}>
+									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px', backgroundPosition: '50% -160px'}}>
 								<div className="container">
 									<div className="row">
 										<div className="col-lg-6">
