@@ -124,7 +124,7 @@ class Home extends Component {
 									<p className="text-muted t300 lead">Founded over 70 years ago, our extensive experience in the entertainment industry has earned Abbey Leisure Group an envied reputation for providing official tickets, with or without hospitality, for all major sporting events, concerts and theatre in London and across the UK. Here at Abbey we source the very best seats for hard to obtain events, always at competitive prices and never letting our clients down.</p>
 								</div>
 								<div className="col-md-6 col-sm-6">
-									<img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Featured image 1" className="card-img-rounded" />
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578415375/abbey-leisure/west-end.jpg" alt="Featured image 1" className="card-img-rounded" />
 							</div>
 						</div>
 					</div>
@@ -210,16 +210,16 @@ class Home extends Component {
 
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
-									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576433383/abbey-leisure/f1.jpg" alt="Featured image 2" className="card-img-top" />
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578411891/abbey-leisure/rugby.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
-										<h5 className="card-title mb-0 t600">Formula 1</h5>
+										<h5 className="card-title mb-0 t600">Rugby</h5>
 									</div>
 								</div>
 
 								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576440876/abbey-leisure/flower-show.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
-										<h5 className="card-title mb-0 t600">Chelsea Flower Show</h5>
+										<h5 className="card-title mb-0 t600">Flower Shows</h5>
 									</div>
 								</div>
 							</div>
