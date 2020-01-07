@@ -116,8 +116,7 @@
 .instagram-grid > div {
     width: calc(25% - 20px);
     height: 200px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -144,7 +143,7 @@
 @media (max-width: 575.98px) {
     .instagram-grid > div {
         width: calc(50% - 20px);
-        height: 170px;
+        height: 120px;
     }
 }
 
