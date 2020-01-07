@@ -3,7 +3,8 @@ import requests from '../api/requests';
 import Head from '../components/head';
 import Footer from '../components/footer';
 import Nav from '../components/home/nav';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import InstaGrid from '../components/home/instagram';
 
 
 class Home extends Component {
@@ -66,8 +67,7 @@ class Home extends Component {
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
 							<div className="ohidden d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -1000px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px'}}>
-
+									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px', backgroundPosition: '0 -160px'}}>
 								<div className="container">
 									<div className="row">
 										<div className="col-lg-6">
@@ -119,7 +119,7 @@ class Home extends Component {
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										<div className="before-heading">About Us</div>
-										<h3 className="nott t500">Abbey Leisure Group is a London based company specialising in client entertainment and the supply of tickets and hospitality packages.</h3>
+										<h3 className="nott t600">Abbey Leisure Group is a London based company specialising in client entertainment and the supply of tickets and hospitality packages.</h3>
 									</div>
 									<p className="text-muted t300 lead">Founded over 70 years ago, our extensive experience in the entertainment industry has earned Abbey Leisure Group an envied reputation for providing official tickets, with or without hospitality, for all major sporting events, concerts and theatre in London and across the UK. Here at Abbey we source the very best seats for hard to obtain events, always at competitive prices and never letting our clients down.</p>
 								</div>
@@ -155,7 +155,7 @@ class Home extends Component {
 					<div className="container clearfix">
 						<div className="heading-block mb-4 nobottomborder">
 							<div className="before-heading">Get Involved</div>
-							<h3 className="nott t500">Our Events</h3>
+							<h3 className="nott t600">Our Events</h3>
 						</div>
 
 						<div className="row">
@@ -292,8 +292,17 @@ class Home extends Component {
 						</div>
 					</div>
 
-
+					<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
+						<div className="container clearfix">
+							<div className="heading-block mb-4 nobottomborder">
+								<div className="before-heading">Latest from Instagram</div>
+								<h3 className="nott t600">@abbeyleisuregroup</h3>
+							</div>
+							<InstaGrid account="abbeyleisuregroup" numberOfMediaElements={4} />
+						</div>
+					</div>
 				</div>
+
 				<div id="gotoTop" className=""><i className="icon-angle-up"></i></div>
 
 			<Footer />
