@@ -90,7 +90,7 @@ body:not(.device-touch) .button {
 	font-size: 22px;
 	height: auto;
 	line-height: 1;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'Raleway' sans-serif;
 }
 
 .button.button-desc span {

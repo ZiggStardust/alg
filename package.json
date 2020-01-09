@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next -p 8200",
+    "dev": "next -p 8400",
     "build": "next build",
     "start": "next start -p 8200",
     "format": "prettier --trailing-comma es5 --single-quote --write './**/*.js'"

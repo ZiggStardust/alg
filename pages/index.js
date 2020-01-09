@@ -58,7 +58,7 @@ class Home extends Component {
 					</div>
 				</>
 			);
-		}
+		};
 
 		return (
 			<div>
@@ -67,11 +67,12 @@ class Home extends Component {
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
 							<div className="ohidden d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: 'calc(100vh - 100px)', minHeight: '400px', backgroundPosition: '50% -160px'}}>
+									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: '100vh', minHeight: '400px', backgroundPosition: '50% -160px'}}>
 								<div className="container">
-									<div className="row">
+									<div className="row hero-text">
 										<div className="col-lg-6">
 											<h1 className="text-white">The best in client entertainment, with the hottest tickets and hospitality packages around.</h1>
+											{/*<h1 className="text-white">More than just the ticket</h1>*/}
 										</div>
 									</div>
 								</div>
@@ -161,43 +162,37 @@ class Home extends Component {
 						<div className="row">
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
-									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576424943/abbey-leisure/5df655ee4ca6fa3c3c0bb7a6.jpg" alt="Featured image 1" className="card-img-top" />
-										<div className="card-body">
-											<h5 className="card-title mb-0 t600">Horse Racing</h5>
-										</div>
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576531430/abbey-leisure/theatre.jpg" alt="Featured image 2" className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">Theatre</h5>
+									</div>
 								</div>
 
+								<div className="card shadow-sm border-light mt-4">
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576424943/abbey-leisure/5df655ee4ca6fa3c3c0bb7a6.jpg" alt="Featured image 1" className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">Horse Racing</h5>
+									</div>
+								</div>
+							</div>
+
+							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576434968/abbey-leisure/football.jpg" alt="Featured image 1" className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">Football</h5>
 									</div>
 								</div>
-							</div>
 
-							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576432888/abbey-leisure/tennis.jpg" alt="Featured image 2" className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">Tennis</h5>
 									</div>
 								</div>
-
-								<div className="card shadow-sm border-light mt-4">
-									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576531430/abbey-leisure/theatre.jpg" alt="Featured image 2" className="card-img-top" />
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">Theatre</h5>
-									</div>
-								</div>
 							</div>
 
 							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576433357/abbey-leisure/cricket.jpg" alt="Featured image 2" className="card-img-top" />
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">Cricket</h5>
-									</div>
-								</div>
 
 								<div className="card shadow-sm border-light mt-4">
 									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576435017/abbey-leisure/concerts.jpg" alt="Featured image 2" className="card-img-top" />
@@ -205,6 +200,15 @@ class Home extends Component {
 										<h5 className="card-title mb-0 t600">Concerts</h5>
 									</div>
 								</div>
+
+								<div className="card shadow-sm border-light mt-4">
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576433357/abbey-leisure/cricket.jpg" alt="Featured image 2" className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">Cricket</h5>
+									</div>
+								</div>
+
+
 
 							</div>
 

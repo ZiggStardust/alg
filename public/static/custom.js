@@ -19,3 +19,18 @@ jQuery('[data-scroll-down]').click(function(){
 		1000
 	);
 });
+
+jQuery(window).scroll(function () {
+	var scrollPosition = jQuery('.header-down')[0].getBoundingClientRect();
+	console.log(scrollPosition)
+	if (scrollPosition.y < 50) {
+		jQuery('#header').removeClass('transparent');
+		jQuery('.logo-white').addClass('hidden');
+		jQuery('.logo').removeClass('hidden');
+
+	} else {
+		jQuery('#header').addClass('transparent');
+		jQuery('.logo-white').removeClass('hidden');
+		jQuery('.logo').addClass('hidden');
+	}
+});

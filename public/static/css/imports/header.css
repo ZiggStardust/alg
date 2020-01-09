@@ -86,7 +86,7 @@ body.stretched #header.full-header .container {
 #logo {
 	position: relative;
 	float: left;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'Raleway' sans-serif;
 	font-size: 36px;
 	line-height: 100%;
 	margin-right: 40px;
@@ -215,7 +215,7 @@ body.stretched #header.full-header .container {
 	font-size: 13px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'Raleway' sans-serif;
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
@@ -394,7 +394,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
 	font-size: 13px;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'Raleway' sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase !important;
 	margin-bottom: 15px;
@@ -859,7 +859,7 @@ body.top-search-open #top-search form {
 	color: #333;
 	font-weight: 700;
 	margin-top: 0 !important;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'Raleway' sans-serif;
 	letter-spacing: 2px;
 }
 
