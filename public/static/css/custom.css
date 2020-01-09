@@ -263,3 +263,8 @@
 #header.transparent #primary-menu > ul > li > a:hover {
     color: #fff;
 }
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
