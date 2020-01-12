@@ -24,8 +24,14 @@ export default {
 				id,
 				routePath,
 				pageTitle,
-				description,
-				image {
+				hero_image {
+					id,
+					publicUrl,
+				},
+				hero_text,
+				about_us_intro_text,
+				about_us_text,
+				about_us_image {
 					id,
 					publicUrl,
 				}

@@ -22,7 +22,6 @@ jQuery('[data-scroll-down]').click(function(){
 
 jQuery(window).scroll(function () {
 	var scrollPosition = jQuery('.header-down')[0].getBoundingClientRect();
-	console.log(scrollPosition)
 	if (scrollPosition.y < 50) {
 		jQuery('#header').removeClass('transparent');
 		jQuery('.logo-white').addClass('hidden');

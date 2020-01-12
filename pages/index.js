@@ -10,10 +10,9 @@ import InstaGrid from '../components/home/instagram';
 class Home extends Component {
 
 	static async getInitialProps() {
-		//const data = await requests.getPageByRoutePath("/");
-		//console.log(data);
-		return {content: {}};
-		//return data && data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
+		const data = await requests.getPageByRoutePath("/");
+		console.log(data);
+		return data && data.allPages && data.allPages.length ? {content: data.allPages[0]} : {};
 	}
 
 	componentDidMount() {
@@ -29,6 +28,8 @@ class Home extends Component {
 				'404'
 			)
 		}
+
+		const {hero_image, hero_text, about_us_intro_text, about_us_text, about_us_image} = content;
 
 		const CustomForm = ({ status, message, onValidated }) => {
 			let email;
@@ -67,12 +68,11 @@ class Home extends Component {
 					<section id="content">
 						<div className="content-wrap pt-0 pb-0">
 							<div className="ohidden d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: 'url("https://res.cloudinary.com/dszvbsfnt/image/upload/v1576768361/abbey-leisure/background.jpg")', height: '100vh', minHeight: '400px', backgroundPosition: '50% -160px'}}>
+									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: `url('${hero_image.publicUrl}')`, height: '100vh', minHeight: '400px', backgroundPosition: '50% -160px'}}>
 								<div className="container">
 									<div className="row hero-text">
 										<div className="col-lg-6">
-											<h1 className="text-white">The best in client entertainment, with the hottest tickets and hospitality packages around.</h1>
-											{/*<h1 className="text-white">More than just the ticket</h1>*/}
+											<h1 className="text-white">{hero_text}</h1>
 										</div>
 									</div>
 								</div>
@@ -120,12 +120,12 @@ class Home extends Component {
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										<div className="before-heading">About Us</div>
-										<h3 className="nott t600">Abbey Leisure Group is a London based company specialising in client entertainment and the supply of tickets and hospitality packages.</h3>
+										<h3 className="nott t600">{about_us_intro_text}</h3>
 									</div>
-									<p className="text-muted t300 lead">Founded over 70 years ago, our extensive experience in the entertainment industry has earned Abbey Leisure Group an envied reputation for providing official tickets, with or without hospitality, for all major sporting events, concerts and theatre in London and across the UK. Here at Abbey we source the very best seats for hard to obtain events, always at competitive prices and never letting our clients down.</p>
+									<p className="text-muted t300 lead">{about_us_text}</p>
 								</div>
 								<div className="col-md-6 col-sm-6">
-									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578415375/abbey-leisure/west-end.jpg" alt="Featured image 1" className="card-img-rounded" />
+									<img src={about_us_image.publicUrl} alt="Featured image 1" className="card-img-rounded" />
 							</div>
 						</div>
 					</div>
