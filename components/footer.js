@@ -7,9 +7,8 @@ export default () => {
 					<div className="line mt-0"></div>
 					<div className="container clearfix">
 						<div className="row">
-
 							<div className="col-xs-12 col-sm-2">
-								<img src="static/img/logo-white.png" alt="Logo Footer" className="mb-4 footer-logo" />
+								<img src="static/img/logo-white-footer.png" alt="Logo Footer" className="mb-4 footer-logo" />
 								<div className="footer-socials">
 									<a href="https://www.facebook.com/AbbeyBoxOffice" className="social-icon si-small si-light si-facebook" title="Facebook" target="_blank">
 										<i className="icon-facebook"></i>
@@ -25,7 +24,6 @@ export default () => {
 									</a>
 								</div>
 							</div>
-
 							<div className="col-xs-12 col-sm-6 pb-2">
 								<p className="mb-1 mt-5">23-24 Greek Street, London, W1D 4DZ</p>
 								<p className="text-white-50">Copyrights © 2019 All Rights Reserved by Abbey Lesuire Group.</p>
