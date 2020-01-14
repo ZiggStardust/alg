@@ -268,3 +268,35 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.events-list .card > div {
+    position: relative;
+}
+
+.events-list .card > div > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.events-list .card > div > span > p {
+   margin: 0;
+   color: #fff;
+   text-align: center;
+   width: 100%;
+}
+
+.events-list .card > div:hover span {
+    opacity: 1;
+}
+
