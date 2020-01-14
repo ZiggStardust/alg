@@ -125,7 +125,7 @@ class Home extends Component {
 												<div className="fbox-icon">
 													<i className="icon-line-circle-check"></i>
 												</div>
-												<h3 className="text-white">Not Just London.</h3>
+												<h3 className="text-white">Not Just London</h3>
 												<p className="text-white mb-0">If London is not convenient for you, then get in touch as Abbey is also able to secure tickets for venues across the Country.</p>
 											</div>
 										</div>
@@ -188,38 +188,24 @@ class Home extends Component {
 										<h5 className="card-title mb-0 t600">{event_1_text}</h5>
 									</div>
 								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<img src={event_2_image.publicUrl} alt={event_2_text} className="card-img-top" />
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_2_text}</h5>
-									</div>
-								</div>
-							</div>
 
-							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
-									<img src={event_3_image.publicUrl} alt={event_3_text} className="card-img-top" />
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_3_text}</h5>
-									</div>
-								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<img src={event_4_image.publicUrl} alt={event_4_text} className="card-img-top" />
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_4_text}</h5>
-									</div>
-								</div>
-							</div>
-
-							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									<img src={event_5_image.publicUrl} alt={event_5_text} className="card-img-top" />
+									<img src={event_2_image.publicUrl} alt={event_5_text} className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">{event_5_text}</h5>
 									</div>
 								</div>
+							</div>
+
+							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
-									<img src={event_6_image.publicUrl} alt={event_6_text} className="card-img-top" />
+									<img src={event_3_image.publicUrl} alt={event_2_text} className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">{event_2_text}</h5>
+									</div>
+								</div>
+								<div className="card shadow-sm border-light mt-4">
+									<img src={event_4_image.publicUrl} alt={event_6_text} className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">{event_6_text}</h5>
 									</div>
@@ -228,9 +214,24 @@ class Home extends Component {
 
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
-									<img src={event_7_image.publicUrl} alt={event_7_text} className="card-img-top" />
+									<img src={event_5_image.publicUrl} alt={event_3_text} className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">{event_3_text}</h5>
+									</div>
+								</div>
+								<div className="card shadow-sm border-light mt-4">
+									<img src={event_6_image.publicUrl} alt={event_7_text} className="card-img-top" />
 									<div className="card-body">
 										<h5 className="card-title mb-0 t600">{event_7_text}</h5>
+									</div>
+								</div>
+							</div>
+
+							<div className="col-md-3 col-sm-6">
+								<div className="card shadow-sm border-light mt-4">
+									<img src={event_7_image.publicUrl} alt={event_4_text} className="card-img-top" />
+									<div className="card-body">
+										<h5 className="card-title mb-0 t600">{event_4_text}</h5>
 									</div>
 								</div>
 								<div className="card shadow-sm border-light mt-4">
