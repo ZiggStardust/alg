@@ -142,7 +142,6 @@ class Home extends Component {
 							</div>
 						</div>
 					</section>
-
 					<div className="section mt-0 pt-md-5 pt-0 mb-0" id="about">
 						<div className="container clearfix">
 							<div className="row align-items-md-center mb-4">
@@ -159,7 +158,6 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-
 				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe" id="signup">
 					<div className="container clearfix">
 						<h3>Subscribe to our mailing list</h3>
@@ -179,14 +177,12 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-
 				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
 					<div className="container clearfix">
 						<div className="heading-block mb-4 nobottomborder">
 							<div className="before-heading">Get Involved</div>
 							<h3 className="nott t600">Our Events</h3>
 						</div>
-
 						<div className="row events-list">
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
@@ -202,7 +198,6 @@ class Home extends Component {
 										<h5 className="card-title mb-0 t600">{event_1_text}</h5>
 									</div>
 								</div>
-
 								<div className="card shadow-sm border-light mt-4">
 									<div>
 										<img src={event_5_image.publicUrl} alt={event_5_text} className="card-img-top" />
@@ -217,7 +212,6 @@ class Home extends Component {
 									</div>
 								</div>
 							</div>
-
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
 									<div>
@@ -246,7 +240,6 @@ class Home extends Component {
 									</div>
 								</div>
 							</div>
-
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
 									<div>
@@ -275,7 +268,6 @@ class Home extends Component {
 									</div>
 								</div>
 							</div>
-
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
 									<div>
@@ -307,7 +299,6 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-
 					<div className="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
 						<div className="container">
 							<div className="heading-block nobottomborder center">
@@ -372,7 +363,6 @@ class Home extends Component {
 							</div>
 						</div>
 					</div>
-
 					<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
 						<div className="container clearfix">
 							<div className="heading-block mb-4 nobottomborder">
@@ -383,11 +373,11 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-
-				<div id="gotoTop" className=""><i className="icon-angle-up"></i></div>
-
+				<div id="gotoTop" className="">
+					<i className="icon-angle-up"></i>
+				</div>
 			<Footer />
-			</div>
+		</div>
 		)
 	}
 }
