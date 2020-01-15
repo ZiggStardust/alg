@@ -4,6 +4,14 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+@font-face {
+    font-family: 'lighthouse';
+    src: url('../fonts/lighthouse-webfont.woff2') format('woff2'),
+    url('../fonts/lighthouse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #primary-menu-trigger {
     left: 0;
 }
@@ -220,6 +228,8 @@
 
 .hero-text h1 {
    font-weight: 500;
+   font-family: 'lighthouse', 'Open Sans', 'Raleway', sans-serif;
+   font-size: 62px;
 }
 
 
@@ -299,5 +309,17 @@ body {
 
 .events-list .card > div:hover span {
     opacity: 1;
+}
+
+
+.feature-box.fbox-plain.fbox-small .fbox-icon {
+    width: 38px;
+    position: absolute;
+    top: -3px;
+
+}
+
+.feature-box.fbox-plain.fbox-small .fbox-icon img {
+    height: 100%;
 }
 

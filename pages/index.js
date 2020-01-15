@@ -113,7 +113,8 @@ class Home extends Component {
 										<div className="col-md-4 mt-3 mt-md-0">
 											<div className="feature-box fbox-plain fbox-small fbox-dark  mb-0">
 												<div className="fbox-icon">
-													<i className="icon-line-circle-check"></i>
+													{/*<i className="icon-line-circle-check"></i>*/}
+													<img src="static/img/icon-ticket.svg" />
 												</div>
 												<h3 className="text-white">Exclusive Tickets</h3>
 												<p className="text-white mb-0">Abbey owns a portfolio of tickets at all the main sporting stadiums and concert venues; always in the prime locations.</p>
@@ -122,7 +123,7 @@ class Home extends Component {
 										<div className="col-md-4 mt-3 mt-md-0">
 											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
 												<div className="fbox-icon">
-													<i className="icon-line-circle-check"></i>
+													<img src="static/img/icon-champagne-bottle.svg" />
 												</div>
 												<h3 className="text-white">Hospitality Packages</h3>
 												<p className="text-white mb-0">When the occasion demands ‘more than just the ticket‘, Abbey will provide the very best official hospitality.</p>
@@ -131,7 +132,7 @@ class Home extends Component {
 										<div className="col-md-4 mt-3 mt-md-0">
 											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
 												<div className="fbox-icon">
-													<i className="icon-line-circle-check"></i>
+													<img src="static/img/icon-globe-earth.svg" />
 												</div>
 												<h3 className="text-white">Not Just London</h3>
 												<p className="text-white mb-0">If London is not convenient for you, then get in touch as Abbey is also able to secure tickets for venues across the Country.</p>
