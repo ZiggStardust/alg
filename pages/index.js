@@ -368,7 +368,9 @@ class Home extends Component {
 						<div className="container clearfix">
 							<div className="heading-block mb-4 nobottomborder">
 								<div className="before-heading">Latest from Instagram</div>
-								<h3 className="nott t600">@abbeyleisuregroup</h3>
+								<h3 className="nott t600">
+									<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>
+								</h3>
 							</div>
 							<InstaGrid account="abbeyleisuregroup" numberOfMediaElements={4} />
 						</div>

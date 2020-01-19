@@ -28,7 +28,7 @@ export default () => {
 								<p className="mb-1 mt-5">23-24 Greek Street, London, W1D 4DZ</p>
 								<p className="text-white-50">Copyrights © 2019 All Rights Reserved by Abbey Lesuire Group.</p>
 								<div className="copyright-links">
-									<a href="mailto:info@abbey-leisure.co.uk" className="text-white">office@abbey-leisure.co.uk</a> / <a href="tel:+442077989200" className="text-white">020 7798 9200</a></div>
+									<a href="mailto:office@abbey-leisure.co.uk" className="text-white">office@abbey-leisure.co.uk</a> / <a href="tel:+442077989200" className="text-white">020 7798 9200</a></div>
 							</div>
 							<div className="col-xs-12 col-sm-4 align-content-end align-items-center text-white footer-map">
 								<iframe src="https://snazzymaps.com/embed/207107" width="100%" height="200px" className="pull-right"></iframe>
