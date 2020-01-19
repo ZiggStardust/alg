@@ -204,7 +204,7 @@ class Home extends Component {
 										<img src={event_5_image.publicUrl} alt={event_5_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_2_hover_text}
+												{event_5_hover_text}
 											</p>
 										</span>
 									</div>
@@ -219,7 +219,7 @@ class Home extends Component {
 										<img src={event_2_image.publicUrl} alt={event_2_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_3_hover_text}
+												{event_2_hover_text}
 											</p>
 										</span>
 									</div>
@@ -232,7 +232,7 @@ class Home extends Component {
 										<img src={event_6_image.publicUrl} alt={event_6_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_4_hover_text}
+												{event_6_hover_text}
 											</p>
 										</span>
 									</div>
@@ -247,7 +247,7 @@ class Home extends Component {
 										<img src={event_3_image.publicUrl} alt={event_3_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_5_hover_text}
+												{event_3_hover_text}
 											</p>
 										</span>
 									</div>
@@ -260,7 +260,7 @@ class Home extends Component {
 										<img src={event_7_image.publicUrl} alt={event_7_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_6_hover_text}
+												{event_7_hover_text}
 											</p>
 										</span>
 									</div>
@@ -275,7 +275,7 @@ class Home extends Component {
 										<img src={event_4_image.publicUrl} alt={event_4_text} className="card-img-top" />
 										<span>
 											<p>
-												{event_7_hover_text}
+												{event_4_hover_text}
 											</p>
 										</span>
 									</div>
