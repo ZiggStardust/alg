@@ -10,7 +10,7 @@ export default () => {
 							<div className="col-xs-12 col-sm-2">
 								<img src="static/img/logo-white-footer.png" alt="Logo Footer" className="mb-4 footer-logo" />
 								<div className="footer-socials">
-									<a href="https://www.linkedin.com/company/abbey-leisure-group" className="social-icon si-small si-light si-facebook" title="Facebook" target="_blank">
+									<a href="https://www.linkedin.com/company/abbey-leisure-group" className="social-icon si-small si-light si-linkedin" title="Linkedin" target="_blank">
 										<i className="icon-linkedin"></i>
 										<i className="icon-linkedin"></i>
 									</a>
