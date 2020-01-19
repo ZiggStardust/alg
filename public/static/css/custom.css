@@ -236,6 +236,10 @@
 /*    //font-family: 'lighthouse', 'Open Sans', 'Raleway', sans-serif;*/
 /*}*/
 
+.heading-block h3 a {
+    color: #333;
+}
+
 
 #header {
     background: #fff;
