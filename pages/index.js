@@ -149,7 +149,8 @@ class Home extends Component {
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										{/*<div className="before-heading">About Us</div>*/}
-										<h3 className="nott t600">{about_us_intro_text}</h3>
+										<h3 className="nott t600 lighthouse mb-4">About Us</h3>
+										<h3 className="nott t500">{about_us_intro_text}</h3>
 									</div>
 									<p className="text-muted t300 lead">{about_us_text}</p>
 								</div>
