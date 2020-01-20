@@ -149,7 +149,7 @@ class Home extends Component {
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										{/*<div className="before-heading">About Us</div>*/}
-										<h3 className="nott t600 lighthouse mb-4">About Us</h3>
+										<h3 className="nott t600 mb-4 uppercase">About Us</h3>
 										<h3 className="nott t500">{about_us_intro_text}</h3>
 									</div>
 									<p className="text-muted t300 lead">{about_us_text}</p>
@@ -183,7 +183,7 @@ class Home extends Component {
 					<div className="container clearfix">
 						<div className="heading-block mb-4 nobottomborder">
 							{/*<div className="before-heading">Get Involved</div>*/}
-							<h3 className="nott t600 lighthouse">Our Events</h3>
+							<h3 className="nott t600 uppercase">Our Events</h3>
 						</div>
 						<div className="row events-list">
 							<div className="col-md-3 col-sm-6">
@@ -305,7 +305,7 @@ class Home extends Component {
 						<div className="container">
 							<div className="heading-block nobottomborder center">
 								{/*<div className="before-heading">What our Customers Say</div>*/}
-								<h2 className="nott t600 lighthouse">Testimonials</h2>
+								<h3 className="nott t600 uppercase">Testimonials</h3>
 								{/*<p className="mb-0 mt-1">*/}
 								{/*	<span className="t600">Excellent, 9.6</span> out of 10 based on <span*/}
 								{/*	className="t600">2,118</span> reviews.*/}
@@ -368,7 +368,7 @@ class Home extends Component {
 					<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
 						<div className="container clearfix">
 							<div className="heading-block mb-4 nobottomborder">
-								<h3 className="nott t600 lighthouse">Latest from Instagram</h3>
+								<h3 className="nott t600 uppercase">Latest from Instagram</h3>
 								{/*<div className="before-heading">Latest from Instagram</div>*/}
 								<h4 className="nott t600">
 									<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>

@@ -334,6 +334,10 @@ body {
     margin-bottom: 8px;
 }
 
+.heading-block h3.uppercase {
+   text-transform: uppercase !important;
+}
+
 .heading-block h3.lighthouse {
     font-family: 'lighthouse', 'Open Sans', 'Raleway', sans-serif;
     font-size: 36px;
