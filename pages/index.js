@@ -145,7 +145,7 @@ class Home extends Component {
 					</section>
 					<div className="section mt-0 pt-md-5 pt-0 mb-0" id="about">
 						<div className="container clearfix">
-							<div className="row align-items-md-center mb-4">
+							<div className="row mb-4">
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										{/*<div className="before-heading">About Us</div>*/}
@@ -162,7 +162,8 @@ class Home extends Component {
 				</div>
 				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe" id="signup">
 					<div className="container clearfix">
-						<h3>Subscribe to our mailing list</h3>
+						<h3>Subscribe</h3>
+						<p className="blurb">Sign up to our mailing list to receive information on all our ticketing offers and upcoming events</p>
 						<div id="mc_embed_signup">
 							<form className="form-inline" action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 								<MailchimpSubscribe
@@ -301,80 +302,80 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-					<div className="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
-						<div className="container">
-							<div className="heading-block nobottomborder center">
-								{/*<div className="before-heading">What our Customers Say</div>*/}
-								<h3 className="nott t600 uppercase">Testimonials</h3>
-								{/*<p className="mb-0 mt-1">*/}
-								{/*	<span className="t600">Excellent, 9.6</span> out of 10 based on <span*/}
-								{/*	className="t600">2,118</span> reviews.*/}
-								{/*</p>*/}
-							</div>
-							<div id="testimonials-carousel"
-									 className="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix"
-									 data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false"
-									 data-pagi="true" data-items="1">
-								<div className="slide">
-									<div className="testi-content">
-										<div className="testi-stars mb-4">
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-										</div>
-										<p>Thank you Abbey for another wonderful day at Wimbledon . Our debenture seats were in a prime location on Centre Court and the hospitality was superb.</p>
-										<div className="testi-meta mt-4">
-											By x.
-										</div>
-									</div>
-								</div>
-								<div className="slide">
-									<div className="testi-content">
-										<div className="testi-stars mb-4">
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-											<i className="icon-star3"></i>
-										</div>
-										<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
-										<div className="testi-meta mt-4">
-											By x.
-										</div>
-									</div>
-								</div>
-								{/*<div className="slide">*/}
-								{/*	<div className="testi-content">*/}
-								{/*		<div className="testi-stars mb-4">*/}
-								{/*			<i className="icon-star3"></i>*/}
-								{/*			<i className="icon-star3"></i>*/}
-								{/*			<i className="icon-star3"></i>*/}
-								{/*			<i className="icon-star3"></i>*/}
-								{/*			<i className="icon-star3"></i>*/}
-								{/*		</div>*/}
-								{/*		<p>Compellingly engage multimedia based niche markets via value-added manufactured products.*/}
-								{/*			Competently formulate goal-oriented content for installed base users. Uniquely leverage other's*/}
-								{/*			granular ROI without 24/365 collaboration and idea-sharing.</p>*/}
-								{/*		<div className="testi-meta mt-4">*/}
-								{/*			By x.*/}
-								{/*		</div>*/}
-								{/*	</div>*/}
-								{/*</div>*/}
-							</div>
+				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
+					<div className="container clearfix">
+						<div className="heading-block mb-4 nobottomborder">
+							<h3 className="nott t600 uppercase">Latest from Instagram</h3>
+							{/*<div className="before-heading">Latest from Instagram</div>*/}
+							<h4 className="nott t600">
+								<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>
+							</h4>
 						</div>
+						<InstaGrid account="abbeyleisuregroup" numberOfMediaElements={4} />
 					</div>
-					<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
-						<div className="container clearfix">
-							<div className="heading-block mb-4 nobottomborder">
-								<h3 className="nott t600 uppercase">Latest from Instagram</h3>
-								{/*<div className="before-heading">Latest from Instagram</div>*/}
-								<h4 className="nott t600">
-									<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>
-								</h4>
+				</div>
+			</div>
+				<div className="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
+					<div className="container">
+						<div className="heading-block nobottomborder center">
+							{/*<div className="before-heading">What our Customers Say</div>*/}
+							<h3 className="nott t600 uppercase">Testimonials</h3>
+							{/*<p className="mb-0 mt-1">*/}
+							{/*	<span className="t600">Excellent, 9.6</span> out of 10 based on <span*/}
+							{/*	className="t600">2,118</span> reviews.*/}
+							{/*</p>*/}
+						</div>
+						<div id="testimonials-carousel"
+								 className="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix"
+								 data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false"
+								 data-pagi="true" data-items="1">
+							<div className="slide">
+								<div className="testi-content">
+									<div className="testi-stars mb-4">
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+									</div>
+									<p>Thank you Abbey for another wonderful day at Wimbledon . Our debenture seats were in a prime location on Centre Court and the hospitality was superb.</p>
+									<div className="testi-meta mt-4">
+										Matt Jenkins, Founder of MJM London
+									</div>
+								</div>
 							</div>
-							<InstaGrid account="abbeyleisuregroup" numberOfMediaElements={4} />
+							<div className="slide">
+								<div className="testi-content">
+									<div className="testi-stars mb-4">
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+										<i className="icon-star3"></i>
+									</div>
+									<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
+									<div className="testi-meta mt-4">
+										David Oz, Director of Winged Boots
+									</div>
+								</div>
+							</div>
+							{/*<div className="slide">*/}
+							{/*	<div className="testi-content">*/}
+							{/*		<div className="testi-stars mb-4">*/}
+							{/*			<i className="icon-star3"></i>*/}
+							{/*			<i className="icon-star3"></i>*/}
+							{/*			<i className="icon-star3"></i>*/}
+							{/*			<i className="icon-star3"></i>*/}
+							{/*			<i className="icon-star3"></i>*/}
+							{/*		</div>*/}
+							{/*		<p>Compellingly engage multimedia based niche markets via value-added manufactured products.*/}
+							{/*			Competently formulate goal-oriented content for installed base users. Uniquely leverage other's*/}
+							{/*			granular ROI without 24/365 collaboration and idea-sharing.</p>*/}
+							{/*		<div className="testi-meta mt-4">*/}
+							{/*			By x.*/}
+							{/*		</div>*/}
+							{/*	</div>*/}
+							{/*</div>*/}
 						</div>
 					</div>
 				</div>
