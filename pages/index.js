@@ -145,7 +145,7 @@ class Home extends Component {
 					</section>
 					<div className="section mt-0 pt-md-5 pt-0 mb-0" id="about">
 						<div className="container clearfix">
-							<div className="row mb-4">
+							<div className="row                                                                                                                                                                                                                                                                      mb-4">
 								<div className="col-md-6 pr-5">
 									<div className="heading-block mb-4 nobottomborder">
 										{/*<div className="before-heading">About Us</div>*/}
@@ -157,26 +157,6 @@ class Home extends Component {
 								<div className="col-md-6 col-sm-6">
 									<img src={about_us_image.publicUrl} alt="Featured image 1" className="card-img-rounded" />
 							</div>
-						</div>
-					</div>
-				</div>
-				<div className="section mt-0 mb-0 pt-md-0 pt-0 bg-theme-whit subscribe" id="signup">
-					<div className="container clearfix">
-						<h3>Subscribe</h3>
-						<p className="blurb">Sign up to our mailing list to receive information on all our ticketing offers and upcoming events</p>
-						<div id="mc_embed_signup">
-							<form className="form-inline" action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-								<MailchimpSubscribe
-									url='https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20'
-									render={({ subscribe, status, message }) => (
-										<CustomForm
-											status={status}
-											message={message}
-											onValidated={formData => subscribe(formData)}
-										/>
-									)}
-								/>
-							</form>
 						</div>
 					</div>
 				</div>
@@ -302,6 +282,30 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
+				<div className="section mb-0 pt-md-5 pt-5 bg-theme-whit subscribe" id="signup">
+					<div className="container clearfix">
+						<h3>Subscribe</h3>
+						<p className="blurb">Sign up to our mailing list to receive information on all our ticketing offers and
+							upcoming events</p>
+						<div id="mc_embed_signup">
+							<form className="form-inline"
+										action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20"
+										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+										noValidate>
+								<MailchimpSubscribe
+									url='https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20'
+									render={({subscribe, status, message}) => (
+										<CustomForm
+											status={status}
+											message={message}
+											onValidated={formData => subscribe(formData)}
+										/>
+									)}
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
 					<div className="container clearfix">
 						<div className="heading-block mb-4 nobottomborder">
@@ -355,7 +359,7 @@ class Home extends Component {
 									</div>
 									<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
 									<div className="testi-meta mt-4">
-										David Oz, Director of Winged Boots
+										David Ox, Director of Winged Boots
 									</div>
 								</div>
 							</div>
