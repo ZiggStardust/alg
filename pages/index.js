@@ -100,7 +100,7 @@ class Home extends Component {
 									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: `url('${hero_image.publicUrl}')`, height: '100vh', minHeight: '400px', backgroundPosition: '50% -160px'}}>
 								<div className="container">
 									<div className="row hero-text">
-										<div className="col-lg-6">
+										<div className="col-lg-8">
 											<h1 className="text-white">{hero_text}</h1>
 										</div>
 									</div>
