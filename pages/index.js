@@ -37,6 +37,7 @@ class Home extends Component {
 			event_1_text,
 			event_1_image,
 			event_1_hover_text,
+			event_1_url,
 			event_2_text,
 			event_2_image,
 			event_2_hover_text,
@@ -169,6 +170,7 @@ class Home extends Component {
 						<div className="row events-list">
 							<div className="col-md-3 col-sm-6">
 								<div className="card shadow-sm border-light mt-4">
+									{event_1_url && <a href={event_1_url} target="_blank"></a>}
 									<div>
 										<img src={event_1_image.publicUrl} alt={event_1_text} className="card-img-top" />
 										<span>

@@ -41,6 +41,7 @@ export default {
 				},
 				event_1_text,
 				event_1_hover_text,
+				event_1_url,
 				event_2_image {
 					id,
 					publicUrl,

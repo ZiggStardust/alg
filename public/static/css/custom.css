@@ -290,6 +290,25 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.events-list .card {
+    position: relative;
+}
+
+.events-list .card > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    z-index: 9;
+}
+
+.events-list .card > a:hover + div > span {
+    opacity: 1;
+}
+
 .events-list .card > div {
     position: relative;
 }
