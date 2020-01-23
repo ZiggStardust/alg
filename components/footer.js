@@ -43,6 +43,9 @@ export default () => {
 			<script src="/static/functions.js"></script>
 			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 			<script type='text/javascript' src="/static/custom.js"></script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156919678-1"></script>
+			<script type="javascript" src="/static/gtm.js"></script>
+
 
 		</div>
 	)
