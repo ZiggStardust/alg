@@ -6,6 +6,7 @@ var $mcj = jQuery.noConflict(true);
 
 jQuery('[data-scroll]').click(function(){
 	element = jQuery('#'+jQuery(this).attr('data-scroll'));
+	jQuery('#primary-menu-trigger').click();
 	jQuery('html').animate(
 		{scrollTop: element.offset().top - 120}, //- $(window).scrollTop()
 		1000

@@ -40,6 +40,13 @@ export default content => {
 										<div>Contact Us</div>
 									</a>
 								</li>
+								<li className="signup">
+									<a href="#" data-scroll="signup">
+										<div>Sign Up</div>
+									</a>
+								</li>
+
+
 							</ul>
 							<div id="top-account">
 								<a href="#" className="d-none d-lg-block" data-scroll="signup">

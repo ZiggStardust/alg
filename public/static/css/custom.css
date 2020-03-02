@@ -30,11 +30,46 @@
     }
 }
 
-@media (max-width: 767.98px) {
+#primary-menu .signup {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    #header .container {
+        max-width: 100%;
+
+    }
+    #primary-menu-trigger {
+        left: 15px;
+    }
+
     .hero-features {
         max-width: 90%;
     }
+    .primary-menu-open #primary-menu {
+        background: #fff !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 100px;
+        width: auto;
+        height: 100%;
+        padding: 100px 20px;
+    }
+    .primary-menu-open #primary-menu ul li a {
+        color: #000 !important;
+    }
+    .primary-menu-open #header.transparent #primary-menu-trigger i {
+        color: #000 !important;
+    }
+    .primary-menu-open #header.transparent #primary-menu-trigger i:before {
+        content: "\e6c9";
+    }
+    #primary-menu .signup {
+        display: block;
+    }
 }
+
 
 #top-account {
     margin: 31px 0 20px 20px;
