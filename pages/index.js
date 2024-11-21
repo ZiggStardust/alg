@@ -6,7 +6,6 @@ import Nav from '../components/home/nav';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import InstaGrid from '../components/home/instagram';
 
-
 class Home extends Component {
 
 	static async getInitialProps() {
@@ -20,123 +19,81 @@ class Home extends Component {
 	}
 
 	render() {
-		const {content} = this.props;
-		console.log(content);
-
-		if (!content) {
-			return (
-				'404'
-			)
-		}
-
-		const {
-			hero_image,
-			hero_text,
-			about_us_intro_text,
-			about_us_text, about_us_image,
-			event_1_text,
-			event_1_image,
-			event_1_hover_text,
-			event_1_url,
-			event_2_text,
-			event_2_image,
-			event_2_hover_text,
-			event_3_text,
-			event_3_image,
-			event_3_hover_text,
-			event_4_text,
-			event_4_image,
-			event_4_hover_text,
-			event_5_text,
-			event_5_image,
-			event_5_hover_text,
-			event_6_text,
-			event_6_image,
-			event_6_hover_text,
-			event_7_text,
-			event_7_image,
-			event_7_hover_text,
-			event_8_text,
-			event_8_image,
-			event_8_hover_text
-		} = content;
-
-		const CustomForm = ({ status, message, onValidated }) => {
-			let email;
-			const submit = () =>
-				email &&
-				email.value.indexOf("@") > -1 &&
-				onValidated({
-					EMAIL: email.value
-				});
-
-			return (
-				<>
-					<div className="form-container">
-						<div className="form-group col-md-4 mb-2">
-							<input ref={node => (email = node)} type="email" placeholder="Email Address" className="form-control fit-width" />
-						</div>
-						<button className="btn btn-primary mb-2" onClick={submit}>Submit</button>
-					</div>
-					<div className="form-container-error">
-						{status === "sending" && <div style={{ color: "blue" }} className="col-12">sending...</div>}
-						{status === "error" && (
-							<div style={{ color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />
-						)}
-						{status === "success" && (
-							<div style={{ color: "green" }} dangerouslySetInnerHTML={{ __html: message }} />
-						)}
-					</div>
-				</>
-			);
-		};
-
 		return (
 			<div>
-				<div id="wrapper" className="clearfix">
-					<Nav />
+				<div id="wrapper" class="clearfix">
+					<header id="header" class="clearfix static-sticky border-bottom-0 sticky-header">
+						<div id="header-wrap" class="">
+							<div class="container clearfix">
+								<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+								<div id="logo" class="logo">
+									<a href="http://abbeyleisuregroup.com/" class="standard-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png">
+										<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png" alt="Canvas Logo" />
+									</a>
+									<a href="http://abbeyleisuregroup.com/" class="retina-logo" data-sticky-logo="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png">
+										<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1576782405/abbey-leisure/logo-simple.png" alt="Canvas Logo" />
+									</a>
+								</div>
+								<nav id="primary-menu">
+									<ul class="sf-js-enabled">
+										<li><a href="#" data-scroll="about"><div>About Us</div></a></li>
+										<li><a href="#" data-scroll="events"><div>Our Events</div></a></li>
+										<li><a href="#" data-scroll="contact"><div>Contact Us</div></a></li>
+										<li class="signup"><a href="#" data-scroll="signup"><div>Sign Up</div></a></li>
+									</ul>
+									<div id="top-account"><a href="#" class="d-none d-lg-block" data-scroll="signup"><span>SIGN UP</span></a></div>
+								</nav>
+							</div>
+						</div>
+					</header>
 					<section id="content">
-						<div className="content-wrap pt-0 pb-0">
+						<div class="content-wrap pt-0 pb-0">
 							<div className="ohidden d-flex align-items-center home-hero"
-									 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;" data-top-bottom="background-position:0px -200px;" style={{backgroundImage: `url('${hero_image.publicUrl}')`, height: '100vh', minHeight: '400px', backgroundPosition: '50% -160px'}}>
-								<div className="container">
-									<div className="row hero-text">
-										<div className="col-lg-8">
-											<h1 className="text-white">{hero_text}</h1>
+								 data-bottom-top="background-position:0px 100px; background-position: 0 -160px;"
+								 data-top-bottom="background-position:0px -200px;"
+								 style={{
+									 backgroundImage: "url('https://res.cloudinary.com/dszvbsfnt/image/upload/v1578666837/abbey-leisure/5e188b535c5802965aa2a9b9.jpg')",
+									 height: "100vh",
+									 minHeight: "400px",
+									 backgroundPosition: "50% -160px"
+								 }}>
+								<div class="container">
+									<div class="row hero-text">
+										<div class="col-lg-8">
+											<h1 class="text-white">More than just the ticket...</h1>
 										</div>
 									</div>
 								</div>
-								<i className="icon-angle-down header-down" id="scroll-down" data-scroll-down></i>
+								<i class="icon-angle-down header-down" id="scroll-down" data-scroll-down="true"></i>
 							</div>
-							<div className="bg-theme-light pt-5 pb-5" data-scroll-content>
-								<div className="shadow-sm hero-features bgcolor dark shadow">
-									<div className="row">
-										<div className="col-md-4 mt-3 mt-md-0">
-											<div className="feature-box fbox-plain fbox-small fbox-dark  mb-0">
-												<div className="fbox-icon">
-													{/*<i className="icon-line-circle-check"></i>*/}
-													<img src="static/img/icon-ticket.svg" />
+							<div class="bg-theme-light pt-5 pb-5" data-scroll-content="true">
+								<div class="shadow-sm hero-features bgcolor dark shadow">
+									<div class="row">
+										<div class="col-md-4 mt-3 mt-md-0">
+											<div class="feature-box fbox-plain fbox-small fbox-dark  mb-0">
+												<div class="fbox-icon">
+													<img src="/static/img/icon-ticket.svg" />
 												</div>
-												<h3 className="text-white">Exclusive Tickets</h3>
-												<p className="text-white mb-0">Abbey owns a portfolio of tickets at all the main sporting stadiums and concert venues; always in the prime locations.</p>
+												<h3 class="text-white">Exclusive Tickets</h3>
+												<p class="text-white mb-0">Abbey owns a portfolio of tickets at all the main sporting stadiums and concert venues; always in the prime locations.</p>
 											</div>
 										</div>
-										<div className="col-md-4 mt-3 mt-md-0">
-											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
-												<div className="fbox-icon">
-													<img src="static/img/icon-champagne-bottle.svg" />
+										<div class="col-md-4 mt-3 mt-md-0">
+											<div class="feature-box fbox-plain fbox-small fbox-dark mb-0">
+												<div class="fbox-icon">
+													<img src="/static/img/icon-champagne-bottle.svg" />
 												</div>
-												<h3 className="text-white">Hospitality Packages</h3>
-												<p className="text-white mb-0">When the occasion demands ‘more than just the ticket‘, Abbey will provide the very best official hospitality.</p>
+												<h3 class="text-white">Hospitality Packages</h3>
+												<p class="text-white mb-0">When the occasion demands ‘more than just the ticket‘, Abbey will provide the very best official hospitality.</p>
 											</div>
 										</div>
-										<div className="col-md-4 mt-3 mt-md-0">
-											<div className="feature-box fbox-plain fbox-small fbox-dark mb-0">
-												<div className="fbox-icon">
-													<img src="static/img/icon-globe-earth.svg" />
+										<div class="col-md-4 mt-3 mt-md-0">
+											<div class="feature-box fbox-plain fbox-small fbox-dark mb-0">
+												<div class="fbox-icon">
+													<img src="/static/img/icon-globe-earth.svg" />
 												</div>
-												<h3 className="text-white">Not Just London</h3>
-												<p className="text-white mb-0">If London is not convenient for you, then get in touch as Abbey is also able to secure tickets for venues across the Country.</p>
+												<h3 class="text-white">Not Just London</h3>
+												<p class="text-white mb-0">If London is not convenient for you, then get in touch as Abbey is also able to secure tickets for venues across the Country.</p>
 											</div>
 										</div>
 									</div>
@@ -144,254 +101,266 @@ class Home extends Component {
 							</div>
 						</div>
 					</section>
-					<div className="section mt-0 pt-md-5 pt-0 mb-0" id="about">
-						<div className="container clearfix">
-							<div className="row                                                                                                                                                                                                                                                                      mb-4">
-								<div className="col-md-6 pr-5">
-									<div className="heading-block mb-4 nobottomborder">
-										{/*<div className="before-heading">About Us</div>*/}
-										<h3 className="nott t600 mb-4 uppercase">About Us</h3>
-										<h3 className="nott t500">{about_us_intro_text}</h3>
+					<div class="section mt-0 pt-md-5 pt-0 mb-0" id="about">
+						<div class="container clearfix">
+							<div class="row mb-4">
+								<div class="col-md-6 pr-5">
+									<div class="heading-block mb-4 nobottomborder">
+										<h3 class="nott t600 mb-4 uppercase">About Us</h3>
+										<h3 class="nott t500">The best in client entertainment, with the hottest tickets and hospitality packages around.</h3>
 									</div>
-									<p className="text-muted t300 lead">{about_us_text}</p>
+									<p class="text-muted t300 lead">Founded over 70 years ago, our extensive experience in the entertainment industry has earned Abbey Leisure Group an envied reputation for providing official tickets, with or without hospitality, for all major sporting events, concerts and theatre in London and across the UK. Here at Abbey we source the very best seats for hard to obtain events, always at competitive prices and never letting our clients down.</p>
 								</div>
-								<div className="col-md-6 col-sm-6">
-									<img src={about_us_image.publicUrl} alt="Featured image 1" className="card-img-rounded" />
+								<div class="col-md-6 col-sm-6">
+									<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578666899/abbey-leisure/5e188b925c5802965aa2a9ba.jpg" alt="Featured image 1" class="card-img-rounded" />
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
-					<div className="container clearfix">
-						<div className="heading-block mb-4 nobottomborder">
-							{/*<div className="before-heading">Get Involved</div>*/}
-							<h3 className="nott t600 uppercase">Our Events</h3>
-						</div>
-						<div className="row events-list">
-							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									{event_1_url && <a href={event_1_url} target="_blank"></a>}
-									<div>
-										<img src={event_1_image.publicUrl} alt={event_1_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_1_hover_text}
-											</p>
-										</span>
-									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_1_text}</h5>
-									</div>
-								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_5_image.publicUrl} alt={event_5_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_5_hover_text}
-											</p>
-										</span>
-									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_5_text}</h5>
-									</div>
-								</div>
+					<div class="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
+						<div class="container clearfix">
+							<div class="heading-block mb-4 nobottomborder">
+								<h3 class="nott t600 uppercase">Our Events</h3>
 							</div>
-							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_2_image.publicUrl} alt={event_2_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_2_hover_text}
-											</p>
-										</span>
+							<div class="row events-list">
+								<div class="col-md-3 col-sm-6">
+									<div class="card shadow-sm border-light mt-4">
+										<a href="https://abbeyboxoffice.londontheatredirect.com/" target="_blank"></a>
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913123/abbey-leisure/5e1c4d625d656c1fd2aa9b49.jpg" alt="THEATRE" class="card-img-top" />
+											<span>
+												<p>Click here to buy Theatre tickets.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">THEATRE</h5>
+										</div>
 									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_2_text}</h5>
-									</div>
-								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_6_image.publicUrl} alt={event_6_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_6_hover_text}
-											</p>
-										</span>
-									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_6_text}</h5>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_3_image.publicUrl} alt={event_3_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_3_hover_text}
-											</p>
-										</span>
-									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_3_text}</h5>
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1580141916/abbey-leisure/5e2f0d5ca77ca66eb9ffe130.jpg" alt="CONCERTS" class="card-img-top" />
+											<span>
+												<p>The O2 Arena, Wembley Stadium, The Royal Albert Hall and many more.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">CONCERTS</h5>
+										</div>
 									</div>
 								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_7_image.publicUrl} alt={event_7_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_7_hover_text}
-											</p>
-										</span>
+								<div class="col-md-3 col-sm-6">
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913144/abbey-leisure/5e1c4d775d656c1fd2aa9b4a.jpg" alt="FOOTBALL" class="card-img-top" />
+											<span>
+												<p>Premier League, FA Cup, Champions League and many more.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">FOOTBALL</h5>
+										</div>
 									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_7_text}</h5>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-3 col-sm-6">
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_4_image.publicUrl} alt={event_4_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_4_hover_text}
-											</p>
-										</span>
-									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_4_text}</h5>
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913491/abbey-leisure/5e1c4ed25d656c1fd2aa9b53.jpg" alt="CRICKET" class="card-img-top" />
+											<span>
+												<p>Various Cricket tournaments across Lords, The Oval and Egdbaston Cricket Grounds.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">CRICKET</h5>
+										</div>
 									</div>
 								</div>
-								<div className="card shadow-sm border-light mt-4">
-									<div>
-										<img src={event_8_image.publicUrl} alt={event_8_text} className="card-img-top" />
-										<span>
-											<p>
-												{event_8_hover_text}
-											</p>
-										</span>
+								<div class="col-md-3 col-sm-6">
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913144/abbey-leisure/5e1c4d775d656c1fd2aa9b4b.jpg" alt="TENNIS" class="card-img-top" />
+											<span>
+												<p>Wimbledon, Nitto ATP, Queens and many more. </p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">TENNIS</h5>
+										</div>
 									</div>
-									<div className="card-body">
-										<h5 className="card-title mb-0 t600">{event_8_text}</h5>
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913491/abbey-leisure/5e1c4ed25d656c1fd2aa9b54.jpg" alt="RUGBY" class="card-img-top" />
+											<span>
+												<p>Autumn Internationals, 6 Nations and many more. </p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">RUGBY</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1580141916/abbey-leisure/5e2f0d5ca77ca66eb9ffe12f.jpg" alt="HORSE RACING" class="card-img-top" />
+											<span>
+												<p>Ascot, Cheltenham, Aintree and many more.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">HORSE RACING</h5>
+										</div>
+									</div>
+									<div class="card shadow-sm border-light mt-4">
+										<div>
+											<img src="https://res.cloudinary.com/dszvbsfnt/image/upload/v1578913491/abbey-leisure/5e1c4ed25d656c1fd2aa9b55.jpg" alt="FLOWER SHOWS" class="card-img-top" />
+											<span>
+												<p>Chelsea Flower Show, Hampton Court Flower Show and many more.</p>
+											</span>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title mb-0 t600">FLOWER SHOWS</h5>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="section mb-0 pt-md-5 pt-5 bg-theme-whit subscribe" id="signup">
-					<div className="container clearfix">
-						<h3>Subscribe</h3>
-						<p className="blurb">Sign up to our mailing list to receive information on all our ticketing offers and
-							upcoming events</p>
-						<div id="mc_embed_signup">
-							<form className="form-inline"
-										action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20"
-										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
-										noValidate>
-								<MailchimpSubscribe
-									url='https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20'
-									render={({subscribe, status, message}) => (
-										<CustomForm
-											status={status}
-											message={message}
-											onValidated={formData => subscribe(formData)}
-										/>
-									)}
-								/>
-							</form>
+					<div class="section mb-0 pt-md-5 pt-5 bg-theme-whit subscribe" id="signup">
+						<div class="container clearfix">
+							<h3>Subscribe</h3>
+							<p class="blurb">Sign up to our mailing list to receive information on all our ticketing offers and upcoming events</p>
+							<div id="mc_embed_signup">
+								<form class="form-inline" action="https://abbeyboxoffice.us3.list-manage.com/subscribe/post?u=8991b220e340c3f9b2c94548f&amp;id=a3e4795f20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+									<div class="form-container">
+										<div class="form-group col-md-4 mb-2">
+											<input type="email" placeholder="Email Address" class="form-control fit-width" />
+										</div>
+										<button class="btn btn-primary mb-2">Submit</button>
+									</div>
+									<div class="form-container-error"></div>
+								</form>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
-					<div className="container clearfix">
-						<div className="heading-block mb-4 nobottomborder">
-							<h3 className="nott t600 uppercase">Latest from Instagram</h3>
-							{/*<div className="before-heading">Latest from Instagram</div>*/}
-							<h4 className="nott t600">
-								<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>
-							</h4>
+					<div class="section mt-0 md-0 pt-5 mb-0 bg-theme-white home-events" id="events">
+						<div class="container clearfix">
+							<div class="heading-block mb-4 nobottomborder">
+								<h3 class="nott t600 uppercase">Latest from Instagram</h3>
+								<h4 class="nott t600">
+									<a href="https://www.instagram.com/abbeyleisuregroup" target="_blank">@abbeyleisuregroup</a>
+								</h4>
+							</div>
+							<div class="instagram-grid">
+								<p>Check instagram here</p>
+							</div>
 						</div>
-						<InstaGrid account="abbeyleisuregroup" numberOfMediaElements={4} />
+					</div>
+					<div class="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
+						<div class="container">
+							<div class="heading-block nobottomborder center">
+								<h3 class="nott t600 uppercase">Testimonials</h3>
+							</div>
+							<div id="testimonials-carousel" class="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix owl-loaded owl-drag with-carousel-dots" data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false" data-pagi="true" data-items="1">
+								<div class="owl-stage-outer">
+									<div class="owl-stage">
+										<div class="owl-item active">
+											<div class="slide">
+												<div class="testi-content">
+													<div class="testi-stars mb-4">
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+													</div>
+													<p>Thank you Abbey for another wonderful day at Wimbledon . Our debenture seats were in a prime location on Centre Court and the hospitality was superb.</p>
+													<div class="testi-meta mt-4">Matt Jenkins, Founder of MJM London</div>
+												</div>
+											</div>
+										</div>
+										<div class="owl-item">
+											<div class="slide">
+												<div class="testi-content">
+													<div class="testi-stars mb-4">
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+														<i class="icon-star3"></i>
+													</div>
+													<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
+													<div class="testi-meta mt-4">David Ox, Director of Winged Boots</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-nav disabled">
+									<button type="button" role="presentation" class="owl-prev"><i class="icon-angle-left"></i></button>
+									<button type="button" role="presentation" class="owl-next"><i class="icon-angle-right"></i></button>
+								</div>
+								<div class="owl-dots">
+									<button role="button" class="owl-dot active"><span></span></button>
+									<button role="button" class="owl-dot"><span></span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="gotoTop" class="">
+						<i class="icon-angle-up"></i>
+					</div>
+					<div id="contact">
+						<footer id="footer" class="noborder bg-primary pb-4">
+							<div id="copyrights" class="nobg dark pt-0">
+								<div class="line mt-0"></div>
+								<div class="container clearfix">
+									<div class="row">
+										<div class="col-xs-12 col-sm-2">
+											<img src="/static/img/logo-white-footer.png" alt="Logo Footer" class="mb-4 footer-logo" />
+											<div class="footer-socials">
+												<a href="https://www.linkedin.com/company/abbey-leisure-group" class="social-icon si-small si-light si-linkedin" title="Linkedin" target="_blank">
+													<i class="icon-linkedin"></i>
+													<i class="icon-linkedin"></i>
+												</a>
+												<a href="https://twitter.com/abbeyleisuregrp" class="social-icon si-small si-light si-twitter" title="Twitter" target="_blank">
+													<i class="icon-twitter"></i>
+													<i class="icon-twitter"></i>
+												</a>
+												<a href="https://www.instagram.com/abbeyleisuregroup" class="social-icon si-small si-light si-instagram" title="instagram" target="_blank">
+													<i class="icon-instagram"></i>
+													<i class="icon-instagram"></i>
+												</a>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 pb-2">
+											<p class="mb-1 mt-5">23-24 Greek Street, London, W1D 4DZ</p>
+											<div class="copyright-links">
+												<a href="mailto:office@abbey-leisure.co.uk" class="text-white">office@abbey-leisure.co.uk</a> / 
+												<a href="tel:+442077989200" class="text-white">020 7798 9200</a>
+											</div>
+											<br />
+											<p class="text-white-50">Copyrights © 2019 All Rights Reserved by Abbey Leisure Group.</p>
+											<p class="text-white-50">All bookings are subject to our Terms and conditions.</p>
+										</div>
+										<div class="col-xs-12 col-sm-4 align-content-end align-items-center text-white footer-map">
+											<iframe src="https://snazzymaps.com/embed/207107" width="100%" height="200px" class="pull-right" data-ruffle-polyfilled=""></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</footer>
+						
 					</div>
 				</div>
+				<script src="/static/jquery.js"></script>
+				<script src="/static/plugins.js"></script>
+				<script src="/static/functions.js"></script>
+				<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+				<script type="text/javascript" src="/static/custom.js"></script>
+				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156919678-1"></script>
+				<script type="javascript" src="/static/gtm.js"></script>
 			</div>
-				<div className="section pt-6 pb-6 mt-0 mb-0 testimonials clearfix">
-					<div className="container">
-						<div className="heading-block nobottomborder center">
-							{/*<div className="before-heading">What our Customers Say</div>*/}
-							<h3 className="nott t600 uppercase">Testimonials</h3>
-							{/*<p className="mb-0 mt-1">*/}
-							{/*	<span className="t600">Excellent, 9.6</span> out of 10 based on <span*/}
-							{/*	className="t600">2,118</span> reviews.*/}
-							{/*</p>*/}
-						</div>
-						<div id="testimonials-carousel"
-								 className="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix"
-								 data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false"
-								 data-pagi="true" data-items="1">
-							<div className="slide">
-								<div className="testi-content">
-									<div className="testi-stars mb-4">
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-									</div>
-									<p>Thank you Abbey for another wonderful day at Wimbledon . Our debenture seats were in a prime location on Centre Court and the hospitality was superb.</p>
-									<div className="testi-meta mt-4">
-										Matt Jenkins, Founder of MJM London
-									</div>
-								</div>
-							</div>
-							<div className="slide">
-								<div className="testi-content">
-									<div className="testi-stars mb-4">
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-										<i className="icon-star3"></i>
-									</div>
-									<p>I have used Abbey for over 10 years for all my ticketing requests quite simply because they offer  a first class service 7 days a weeks and always provide the very best available</p>
-									<div className="testi-meta mt-4">
-										David Ox, Director of Winged Boots
-									</div>
-								</div>
-							</div>
-							{/*<div className="slide">*/}
-							{/*	<div className="testi-content">*/}
-							{/*		<div className="testi-stars mb-4">*/}
-							{/*			<i className="icon-star3"></i>*/}
-							{/*			<i className="icon-star3"></i>*/}
-							{/*			<i className="icon-star3"></i>*/}
-							{/*			<i className="icon-star3"></i>*/}
-							{/*			<i className="icon-star3"></i>*/}
-							{/*		</div>*/}
-							{/*		<p>Compellingly engage multimedia based niche markets via value-added manufactured products.*/}
-							{/*			Competently formulate goal-oriented content for installed base users. Uniquely leverage other's*/}
-							{/*			granular ROI without 24/365 collaboration and idea-sharing.</p>*/}
-							{/*		<div className="testi-meta mt-4">*/}
-							{/*			By x.*/}
-							{/*		</div>*/}
-							{/*	</div>*/}
-							{/*</div>*/}
-						</div>
-					</div>
-				</div>
-				<div id="gotoTop" className="">
-					<i className="icon-angle-up"></i>
-				</div>
-			<Footer />
-		</div>
-		)
+			
+		);
 	}
 }
 
-export default Home
+export default Home;
